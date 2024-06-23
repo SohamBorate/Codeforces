@@ -1,12 +1,13 @@
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main() {
     int t;
-    scanf("%i", &t);
+    cin >> t;
 
     while (t--) {
         int n;
-        scanf("%i", &n);
+        cin >> n;
 
     }
 

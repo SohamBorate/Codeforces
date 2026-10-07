@@ -1,4 +1,6 @@
-#include <chrono>
+#ifdef DEBUG
+    #include <chrono>
+#endif
 #include <iostream>
 using namespace std;
 

@@ -11,9 +11,25 @@ int main() {
     cin >> t;
 
     while (t--) {
-        int n;
-        cin >> n;
+        int x, y;
+        cin >> x >> y;
 
+        if (x == y) {
+            cout << "YES\n";
+            continue;
+        }
+
+        if (x < y) {
+            cout << "NO\n";
+            continue;
+        }
+
+        if (x % y == 0) {
+            cout << "YES\n";
+            continue;
+        }
+
+        cout << "NO\n";
     }
 
     #ifdef DEBUG

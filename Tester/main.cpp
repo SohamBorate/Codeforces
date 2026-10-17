@@ -16,17 +16,17 @@ int main() {
 
     FILE * tf = fopen("test.txt", "w");
 
-    long long t = 1e4;
+    long long t = 100;
 
     fprintf(tf, "%lld\n", t);
     while (t--) {
-        long long n = 1e4;
-        char s[21]; // +1 for null terminator
+        long long n = rand() % 99 + 2;
+        char s[n + 1]; // +1 for null terminator
         fprintf(tf, "%lld\n", n);
-        for (int i = 0; i < 20; i++) {
-            s[i] = cmds[rand() % 3];
+        for (int i = 0; i < n + 1; i++) {
+            s[i] = rand() % 2 ? '1' : '0';
         }
-        s[20] = '\0';
+        s[n + 1] = '\0';
         fprintf(tf, "%s\n", s);
     }
 
